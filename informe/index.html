@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Informe Proyecto</h1>
+        <!-- <p><i>Template</i> base confeccionar el informe. Se puede
+            modificar el estilo si así lo desean, pero se recomienda
+            mantener las secciones separadas para facilitar la corrección del informe.</p> -->
+
+        <div class="response">
+            <h3>Integrante</h2>
+                <p>Beatriz Errázuriz</p>
+        </div>
+
+        <div class="case">
+            <h2>Situación de dominio</h2>
+            <div class="response">
+                <h4>Contexto de la situación y la naturaleza de los datos</h4>
+                <!-- Puedes agregar los P que sean necesarios -->
+                <h4>Respuesta:</h4>
+                <p>One Direction fue una exitosa boy band británica formada en 2010, conocida por su participación en el programa de talentos "The X Factor". El grupo estaba compuesto por Harry Styles, Liam Payne, Louis Tomlinson, Niall Horan y Zayn Malik (hasta su salida en 2015). Lograron un gran éxito internacional con su música pop y fueron una sensación juvenil antes de tomar un receso indefinido en 2016.</p>
+                <p>Para este proyecto se utilizaron dos datasets:</p>
+                <p>1.El primero muestra la cantidad de reproducciones que tuvo la banda en la plataforma de Spotify. Mostrando información de sus singles y albumes</p>
+                <p>2.El segundo muestra la cantidad de semanas que la banda estuvo posicionada en el top 200 de Spotify para cada país y a nivel mundial.</p>
+            </div>
+            <div class="response">
+                <h4>Fuente original de los datos</h4>
+                <!-- Puedes agregar los P que sean necesarios -->
+                <h4>Respuesta:</h4>
+                <p> Los dataset fueron extraídos de <a href="https://kworb.net/spotify/artist/4AK6F7OLvEQ5QYCBNiQWHq.html">Kworb</a> y se tuvieron que añadir los códigos ISO para cada país y limpiar columnas innecesarias solo manteniendo las reproducciones y la cantidad de semanas en el top 200</p>
+            </div>
+            <div class="response">
+                <h4>Usuario objetivo</h4>
+                <!-- Puedes agregar los P que sean necesarios -->
+                <h4>Respuesta:</h4>
+                <p>Este proyecto tiene como principales usuarios objetivos a fanáticos de la banda o interesados en la historia musical</p>
+            </div>
+            <div class="response">
+                <h4>Uso de la herramienta</h4>
+                <!-- Puedes agregar los P que sean necesarios -->
+                <h4>Respuesta:</h4>
+                <p>Las visualizaciones reflejan el impacto que tuvo la banda a lo largo de todo el mundo de una manera dinámica y atractiva. A través de navegar en la página el usuario puede comprender y conocer las cifras que manejaba 1D.</p>
+            </div>
+
+        </div>
+
+        <div class="case">
+            <h2>Abstracción de datos</h2>
+            <div class="response">
+                <h4>Tipos de datos a utilizar en el proyecto</h4>
+                <h4>Respuesta:</h4>
+                <p>Todos los datos son tabulares</p>
+                <p>Song Streams muestra la cantidad de reproducciones de la canciones de One Direction</p>
+                <table border="1">
+                    <tr>
+                        <th>SONG</th>
+                        <th>ALBUM</th>
+                        <th>STREAMS</th>
+                    </tr>
+                    <tr>
+                        <td>ítem</td>
+                        <td>enlance: se relaciona con los albumes de Album Streams</td>
+                        <td>ítem</td>
+                    </tr>
+                </table>
+                <br>
+                <p>Album Streams muestra la cantidad de reproducciones de la albumes de One Direction</p>
+                <table border="1">
+                    <tr>
+                        <th>ALBUM</th>
+                        <th>STREAMS</th>
+                    </tr>
+                    <tr>
+                        <td>enlance: se relaciona con las canciones de Song Streams</td>
+                        <td>ítem</td>
+                    </tr>
+                </table>
+                <br>
+                <p>Top Charts Songs muestra la cantidad de semanas que una canción ha estado en el top 200 por país</p>
+                <table border="1">
+                    <tr>
+                        <th>ISO</th>
+                        <th>SONG 1</th>
+                        <th>...</th>
+                        <th>SONG N</th>
+                    </tr>
+                    <tr>
+                        <td>enlace: relaciona código con país</td>
+                        <td>ítem</td>
+                        <td>ítem</td>
+                        <td>ítem</td>
+                    </tr>
+                </table>
+                <br>
+                <p>Top Charts Album muestra la cantidad de semanas que un album ha estado en el top 200 por país</p>
+                <table border="1">
+                    <tr>
+                        <th>ISO</th>
+                        <th>ALBUM 1</th>
+                        <th>...</th>
+                        <th>ALBUM N</th>
+                    </tr>
+                    <tr>
+                        <td>enlace: relaciona código con país</td>
+                        <td>ítem</td>
+                        <td>ítem</td>
+                        <td>ítem</td>
+                    </tr>
+                </table>
+                <br>
+                <p>Countries Code hace la relación entre ISO y nombre del país</p>
+                <table border="1">
+                    <tr>
+                        <th>ISO</th>
+                        <th>COUNTRY</th>
+                    </tr>
+                    <tr>
+                        <td>enlace: relaciona código con país</td>
+                        <td>enlace: relaciona código con país</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="response">
+                <h4>Tipos de atributos presente en los datos</h4>
+                <!-- Puedes agregar los P que sean necesarios -->
+                <h4>Respuesta:</h4>
+                <p>Modifica solo este texto (no el de arriba) para poner tu respuesta</p>
+            </div>
+        </div>
+
+        <div class="case">
+            <h2>Abstracción de tareas</h2>
+            <div class="response">
+                <h4>Tarea 1</h4>
+
+                <h4>Acción: Identificar</h4>
+                <h4>Objetivo: Tendencia</h4>
+                <p>El usuario será capaz de identificar aquellos países con mayores tendencias a esuchar más a la banda y a tenerlos por más semanas seguidas en el top 200</p>
+            </div>
+            <div class="response">
+                <h4>Tarea 2</h4>
+
+                <h4>Acción: Comparar</h4>
+                <h4>Objetivo: Correlación</h4>
+                <p>El usuario podrá comparar la cantidad de reproducciones en Spotify con la posición en el top 200 en diferentes países para identificar si hay una correlación entre el éxito de las canciones/álbumes en términos de reproducciones y su posición en los rankings.</p>
+            </div>
+            <div class="response">
+                <h4>Tarea 3</h4>
+
+                <h4>Acción: Identificar</h4>
+                <h4>Objetivo: Valor</h4>
+                <p>El usuario podrá identificar aquellas canciones y albúmes con mayor éxito a partir de saber cuantas reproducciones tuvo cada canción u álbum.</p>
+            </div>
+        </div>
+
+        <div class="case">
+            <h2>Codificación visual e interacciones</h2>
+            <div class="response">
+                <h4>Decisiones de diseño relacionadas a la primera tarea visual</h4>
+                <h4>Respuesta:</h4>
+                <p>Utilizar una proyección geográfica para representar la ubicación de los países (Coropleta). Los cuales se pueden diferenciar aquellos países que tuvieron a la banda menos o más semanas en el top 200 a través de distintos colores y una leyenda.</p>
+                <p>Se representaron los países como nodos en el mapa. Cada color representaba un rango de semanas y al pasar el mouse sobre le nodo se muestra información como el nombre del país y la cantidad de semanas</p>
+                <p>A través de la primera visualización se puede filtrar que album / canción se quiere analizar</p>
+            </div>
+            <div class="response">
+                <h4>Decisiones de diseño relacionadas a la segunda tarea visual</h4>
+                <h4>Respuesta:</h4>
+                <p> Utilizar un gráfico de barras interactivo. Al clickear alguna barra (las cuales representan cantidad de streams de canciones u albumes) se actualiza el mapa con la información del top 200 de ese album/canción. Con esto se puede relacionar si una canción con varias reproducciones tuvo altos puestos en el top 200.</p>
+                <p>La barra cambia de color al ser clickeada y al pasar el mouse encima de la barra da información de la cantidad de reproducciones y el nombre de la canción u álbum</p>
+            </div>
+            <div class="response">
+                <h4>Decisiones de diseño relacionadas a la tercera tarea visual</h4>
+                <h4>Respuesta:</h4>
+                <p>Utilizar un gráfico de barras que refleje la cantidad de reproducciones de cada álbum o canción. El gráfico también puede ser filtrado de manera intuitiva, ya que al clickear la carátula de un álbum en específico se muestran las canciones de ese álbum ordenadas de mayor a menor reproducciones.</p>
+                <p>Al pasar el mouse sobre la barra se muestra información de la cantidad de reproducciones y el nombre de la canción u álbum</p>
+            </div>
+        </div>
+
+        <div class="case">
+            <h3>
+                <a href="../visualización/vis.html">Enlace para acceder a la visualización</a>
+            </h3>
+        </div>
+
+</body>
+
+</html>
